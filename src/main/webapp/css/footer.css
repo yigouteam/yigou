@@ -1,0 +1,115 @@
+#footer{
+	float: left;
+	width: 100%;
+	margin: 10px auto;
+	border-top: 1px solid #D1D1DC;
+}
+li {
+	list-style: none;
+}
+			
+img {
+	border: 0;
+    margin-top: 6px;
+}
+
+.foot_box {
+       float: left;
+	    width: 100%;
+	    background:url(../images/background2.jpg);
+	    overflow: hidden;
+		padding: 20px 50px;
+		margin: 30px 0px;
+		height:100px;
+}
+			
+.foot_box ul {
+	width: 100%;
+	height:100%;
+}
+			
+.foot_box ul li {
+      float: left;
+      width:25%;
+}
+			
+.foot_box ul li img {
+	float: left
+}
+			
+.foot_box ul li span {
+		float: left;
+		line-height: 50px;
+	    font-family: "Microsoft YaHei";
+		color: #000;
+		font-size: 18px;
+		padding-left: 20px;
+}
+.foot2 {
+	    float: left;
+        border-top: 1px solid #ededed;
+	    width:100%;
+	    height: 200px;
+        padding: 20px 50px;
+        margin: auto;
+}
+
+.foot2 dl a {    
+        overflow: hidden;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        color: #8b8b8b;
+}
+
+ .foot2 dl {
+        float: left;
+        width: 25%;
+        padding-left:50px;
+ }
+
+ .foot2 dl dt {
+        color: #646464;
+        font-size: 16px;
+        font-weight: 700;
+        height: 30px;
+        line-height: 30px;
+        text-align: left ;
+}
+
+.foot2 dl dd {
+        text-align: left ;
+   }
+.foot3 .foot_p1{
+	text-align: center;
+	margin: 1px;
+}
+			
+.foot3 .foot_p1 a {
+	margin: 0 10px;
+}
+
+.bottom-about {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+	background-color: #f5f5f5;
+		border-top: #d6d6d6 solid 1px;
+}
+			
+.bottom-about a {
+		color: #666666;
+		text-decoration: none;
+		line-height: 20px;
+}
+			
+.bottom-about a:hover {
+	text-decoration: underline;
+}
+			
+#owner {
+   font-size: 12px;
+	margin: 5px;
+}			
+	

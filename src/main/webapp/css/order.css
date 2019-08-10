@@ -1,0 +1,42 @@
+
+/* 璐墿杞�*/
+.Caddress{width: 1170px;margin: auto;position: relative;height: 160px;}
+
+.Caddress .add_mi{height: 106px;float: left;margin-right: 5px; background: url(../images/mail.jpg) no-repeat;padding: 6px 17px;}
+.Caddress .add_mi p{font-size: 12px;line-height: 20px;margin-bottom: 5px;color: #666;width: 203px;}
+
+
+.shade{width: 100%; height: 100%; overflow-y: hidden; position: fixed; z-index: 100; top: 0; background: black; opacity: 0.5;}
+.shade_content{width: 800px; border-radius: 10px; height: 500px; position: fixed; z-index: 101; top: 50%; left: 50%; margin-top: -250px; margin-left: -400px; background: #FFFFFF; }
+.shade_content_div{margin: 0px auto; text-align: center; height: 100%; width: 60%; margin-top: 20px;}
+.shade_title{font-size: 30px; text-align: center; font-weight: bold; font: "寰蒋闆呴粦";}
+.btn_remove{border-radius: 5px; background: #31B0D5; color: white; width: 150px; height: 40px; border: 0px; outline: 0px; font-size: 15px;}
+
+
+
+
+.span_style{font-size: 18px;}
+
+.shade_from{margin-top: 20px;}
+
+.shade_colse{text-align: right; margin-top: 10px; }
+.shade_colse button{font-size: 20px; color: white; outline: 0px; margin-right: 10px; border-radius: 50px; background: red; height: 30px; width: 30px; border: 0px;}
+.open_new{width: 100%;height:40px;margin-bottom:10px;}
+.open_btn{
+	border: 1px solid #C40000;
+    background-color: #C40000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    float: right;
+    border-radius: 5px;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>支付</title>
+
+<link rel="stylesheet" type="text/css" href="../css/order.css" />
+
+<link rel="stylesheet" type="text/css" href="../css/top.css" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+<link href="../css/bootstrap/3.3.6/bootstrap.css"	rel="stylesheet">
+<script	src="../js/jquery/2.0.0/jquery.min.js"></script>
+<script	src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+
+
+<style>
+   
+    span.confirmMoneyText{
+        color: #4D4D4D;
+    }
+    span.confirmMoney{
+        display: block;
+        color: #FF6600;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+        !important;
+    }
+    button.confirmPay{
+        background-color: #00AAEE;
+        border: 1px solid #00AAEE;
+        text-align: center;
+        line-height: 35px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        width: 120px;
+     
+    }
+
+    img.PayImg {
+        width: 300px;
+    }
+    .clear_logo{
+       height:auto;   
+       overflow:hidden;
+       width:100%;
+    }
+    .clear_footer{
+        width:100%; 
+        text-align:center;
+        overflow:hidden;
+    }
+   
+</style>
+</head>
+<body style="margin: 0px auto; width: 1170px;">  
+<nav id="site-nav" role="navigation">
+    <div class="workArea">
+        
+        <span style="color:#C40000;margin:0px" class=" glyphicon glyphicon-home ">
+         <a href="index.html">易购首页 </a>
+        </span>
+         
+        <c:if test="${empty sessionScope.user}">           
+            <span><a href="login.html">登录</a></span>
+            <span><a href="register.html">注册</a></span>
+        </c:if>
+        <c:if test="${!empty sessionScope.user}">
+            <span><a href="user_center.html">Hi，${sessionScope.user.username}</a></span>
+            <span><a href="index.html">退出</a></span>
+        </c:if>
+        
+        <span class="pull-right">
+            <a href="myOrder.html">我的订单</a>  
+                <span style="color:#C40000;margin:0px" class="glyphicon glyphicon-shopping-cart redColor">
+                 <a href="cart.html">购物车</a>
+                </span>
+                <strong id="cartTotalItemNumber">${cartTotalItemNumber}</strong>
+           
+        </span>
+    </div>
+</nav>
+<br>
+<div class="panel panel-info">
+	<div class="panel-heading clear_logo">   
+		<img class="pull-left" src="../images/logo3.png" width="300" height="100">
+	    	
+	</div>
+	<table class="table">
+            <tr>
+                <td>订单提交成功,请尽快完成付款!</td>
+                <td>订单编号: ${order.orderCode} </td>
+            </tr>
+            <tr>
+                <td>收货地址: ${address.province}${address.city}${address.area}${address.detailaddress}</td>
+                <td>收货人: ${address.receiver}   ${address.mobile}</td>
+            </tr>
+             <c:forEach items="${order.orderItems}" var="oi">
+                <tr>
+                    <td>商品信息: ${oi.goods.goodsname} ${oi.goods.format} x ${oi.number}</td>
+                    <td> </td>
+                </tr>
+            </c:forEach>
+    </table>
+ <div class="panel-body">
+	<div style="float:left;width:100%; text-align:center;">
+        <span class="confirmMoneyText">扫一扫付款（元）</span>
+        <span class="confirmMoney">￥${order.total}</span>
+ 
+    <div>
+        <img class="PayImg" src="../images/pay.jpg">
+    </div>
+   </div>
+ </div> 
+ 
+    <div class="panel-footer clear_footer"> 
+        <a href="payed?order_id=${order.id}&total=${order.total}">
+            <button class="confirmPay">确认支付</button>
+        </a>
+ 
+  </div>
+</div>
+
+
+
+  <footer id="footer">   
+<div class="foot_box">
+			<ul>
+				<li><img src="../images/duo.jpg"><span>品类齐全&nbsp;&nbsp;&nbsp;&nbsp; </span></li>
+				<li><img src="../images/kuai.jpg"><span>极速配送&nbsp;&nbsp;&nbsp;&nbsp; </span></li>
+				<li><img src="../images/hao.jpg"><span>正品行货&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+				<li><img src="../images/sheng.jpg"><span>天天低价</span></li>
+			</ul>
+		
+	 </div> 
+ 
+  <div class="foot2">
+            <dl>
+                <dt><span>购物指南</span></dt>
+                <dd><a href="#nowhere">免费注册&nbsp;</a></dd>
+                <dd><a href="#nowhere">开通支付宝</a></dd>
+                <dd><a href="#nowhere">支付宝充值</a></dd>
+            </dl>
+            <dl>
+                <dt><span>易购保障</span></dt>
+                <dd><a href="#nowhere">发票保障</a></dd>
+                <dd><a href="#nowhere">售后规则</a></dd>
+                <dd><a href="#nowhere">缺货赔付</a></dd>
+            </dl>
+            <dl>
+                <dt><span>支付方式</span></dt>
+                <dd><a href="#nowhere">快捷支付</a></dd>
+                <dd><a href="#nowhere">信用卡&nbsp;</a></dd>            
+                <dd><a href="#nowhere">蚂蚁花呗</a></dd>
+                <dd><a href="#nowhere">货到付款</a></dd>
+            </dl>
+            <dl>
+                <dt><span>商家服务</span></dt>              
+                <dd><a href="#nowhere">易购智库</a></dd>
+                <dd><a href="#nowhere">物流服务</a></dd>
+                <dd><a href="#nowhere">喵言喵语</a></dd>
+                <dd><a href="#nowhere">运营服务</a></dd>
+            </dl>     
+        </div>
+<div class="foot3 bottom-about ">
+				<div class="w ">
+					<p class="foot_p1 ">
+						<a href="index.html">首页</a>|<a href="# ">设计合作</a>|<a href="# ">广告合作</a>|<a href="# ">联系我们</a>|<a href="# ">关于我们</a>
+					</p>
+					<p id="owner">
+				京公网安备 xxxxxxxxx号  |  京ICP证xxxxxx号  |  互联网商品信息服务资格证编号(京)-经营性-2018-0008 
+				<p id="owner">Copyright© 2018-2018  |  易购版权所有 | 消费者维权热线：4006067733</p>
+                </p>
+				</div>
+			</div>
+ </footer>	
+ </body>
+
+</html>

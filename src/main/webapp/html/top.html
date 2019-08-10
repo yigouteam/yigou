@@ -1,0 +1,54 @@
+<style>
+#site-nav {
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    height: 32px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+#site-nav span {
+    padding-right: 10px;
+    line-height: 32px;
+    margin_right:10px;
+}
+.workArea {
+    width: 100%;
+    margin: 0 auto;
+}
+.workArea a{
+    padding-left:5px;
+}
+.workArea a:hover{
+    color:red;
+    text-decoration: none;
+    
+}
+</style>
+
+
+<nav id="site-nav" role="navigation">
+    <div class="workArea">
+        
+        <span style="color:#C40000;margin:0px" class=" glyphicon glyphicon-home ">
+         <a href="../index">易购首页 </a>
+        </span>
+         
+        <c:if test="${empty sessionScope.user}">           
+            <span><a href="../login">登录</a></span>
+            <span><a href="../register">注册</a></span>
+        </c:if>
+        <c:if test="${!empty sessionScope.user}">
+            <span><a href="user_center">Hi，${sessionScope.user.username}</a></span>
+            <span><a href="../logout">退出</a></span>
+        </c:if>
+        
+        <span class="pull-right">
+            <a href="../myOrder">我的订单</a>  
+                <span style="color:#C40000;margin:0px" class="glyphicon glyphicon-shopping-cart redColor">
+                 <a href="../cart">购物车</a>
+                </span>
+                <strong id="cartTotalItemNumber">${cartTotalItemNumber}</strong>
+           
+        </span>
+    </div>
+</nav>

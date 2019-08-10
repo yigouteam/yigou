@@ -1,0 +1,355 @@
+.exchange_button1{
+	margin: 0px;
+	padding: 0px;
+	width: 139px;
+	line-height:48px;
+	font-size: 15px;
+	text-align: center;
+	color: #ffffff;
+	cursor: pointer; 
+	float: left;
+	display: inline;
+	background-color: red;
+	position: relative;
+	float: left;
+}
+
+.exchange_button2{
+	margin: 0px;
+	padding: 0px;
+	width: 139px;
+	line-height:48px;
+	font-size: 15px;
+	text-align: center;
+	color: #ffffff;
+	cursor: pointer; 
+	float: left;
+	display: inline;
+	background-color: grey;
+	position: relative;
+	float: left;
+}
+.textarea{
+	float: left;
+	width: 252px;
+	height: 45px;
+	line-height:45px;
+	margin-top: 40px;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+
+.forget{
+	margin-top: 10px;
+	float: right;
+	line-height: 20px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 12px/150% "Microsoft Yahei";
+}
+
+div{
+	display: block;
+}
+
+input{
+	    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+.login_content{
+	width: 1170px;
+	margin: 0 auto;//涓�涓�杈硅�涓�0锛�宸��宠竟璺�娴�瑙��ㄨ���ㄨ���
+	background-color: #fff;
+}
+
+.login_content .header{
+    width: 100%;
+    height: 88px;
+    padding-top: 8px;
+}
+
+.header .header_logo{
+	width: 220px;
+	height: 80px;
+	float: left;
+	padding-left: 10px;
+}
+
+.header .header_title{
+	float: left;
+	margin: 20px;
+	font-size: 20px;
+	line-height: 36px;
+	color: #333333;
+	font-family: "Microsoft Yahei ! important";
+}
+
+.header .header_tip{
+	float: right;
+	margin: 20px;
+	font-size: 16px;
+	line-height: 36px;
+}
+
+.header .header_tip span{
+	color: #999999;
+}
+
+.header .header_tip a{
+	color: #333333;
+	cursor: pointer;
+}
+
+.header .header_line{
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	display: inline;//������绱�锛���绱�����娌℃���㈣�绗�
+	overflow: hidden;
+	border: 1px #43a41b solid;
+}
+
+.clear{
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.main{
+	width: 100%;
+	height: 550px;
+	padding: 0px 0px  10px 0px;
+	position: relative;
+	float:left;
+	border: 2px solid #ddd;
+}
+.main .main_bg{
+    position: relative;
+    float: left;
+    left: 0px;
+    width: 700px;
+    z-index: 1;
+}
+form{
+	display: block;
+}
+
+.main .main_content{
+	position: relative;
+	float: left;
+	z-index: 10;
+	
+}
+
+.main .registmain_cont{
+	position: relative;
+	float: left;
+	top: 30px;
+	right: 10px;
+	margin-left: 100px;
+}
+
+/* .mc_outside{
+	width: 335px;
+	margin-left: 50px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+} */
+
+.mc_inside{
+	position: relative; 
+	float: left;
+	width: 280px;
+    margin: 20px auto;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.mci_content .mcicont_input{
+	height: 54px;
+	position: relative;
+	float: left;
+	margin: 10px 12px;
+}
+.parnetCls{
+	z-index: 99;
+}
+.mcicont_input input.long_input{
+	width: 252px;
+}
+.mcicont_input input.cont_input{
+	height: 39px;
+	padding: 5px 13px;
+	border:  #ccc 1px solid;
+	font-size: 14px;
+}
+
+.mcicont_input input.short_input{
+    width: 127px;
+    float: left;
+}
+.prompt_login{
+	color: #aaaaaa;
+    font-size: 14px;
+    cursor: text;
+    left: 14px;
+    position: absolute;
+    top: 9px;
+    display: none;
+}
+
+.mcicont_input .input_error{
+	background: #fee6e7;
+    border: 1px #faa2a6 solid;
+    height: 18px;
+    color: #ff8080;
+    /* font-family: "瀹�浣�"; */
+    position: absolute;
+    top: -19px;
+    left: 0px;
+    display: none;
+    z-index: 98;
+    padding: 0px 20px 0px 16px;
+}
+
+.mcicont_input input.cont_inputerror{
+	border: 1px #ff8080 solid;
+}
+
+.mcicont_line{
+	line-height: 22px;
+	margin-top: 2px;
+	position: relative;
+}
+
+
+.mcicont_line .mciline_left{
+	float: left;
+    color: #333333;
+    position: relative;
+    display: none;
+}
+.mciline_left input {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+
+.mciline_left label{
+	padding-left: 20px;
+}
+
+.mciline_left a {
+    color: #419bf9;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+input[type="checkbox" i] {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    background-color: initial;
+    cursor: default;
+}
+
+.mcicont_line .accepttip {
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #000;
+    filter: Alpha(Opacity=60);
+    opacity: 0.6;
+    border-radius: 2px;
+    display: none;
+}
+
+.mcicontent .mcicont_btn{
+	height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mci_content .spe_mcicbtn{
+	position: relative;
+}
+
+.mcicont_btn input.showinfo {
+    display: none;
+    background-color: #aaaaaa;
+}
+
+.input_button_submit {
+    width: 252px;
+    height: 36px;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    background-color: red;
+    font-size: 18px;
+    margin-top: 20px;
+}
+#footer{
+	padding-top:20px;
+ 	background:#efefef;
+ }
+#footer li {
+	line-height:26px;
+}
+#footer .s4 {
+	height:28px;
+	background: #43a41b;
+}
+.ac {
+	text-align:center;
+}
+.w {
+	width:1000px;
+	margin:0 auto;
+}
+
+a#vertifyhyz{
+	text-decoration: none;
+}
